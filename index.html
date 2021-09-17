@@ -8,51 +8,59 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1 id="title">Title</h1>
-    <p id="description">Description</p>
+    <h1 id="title">Mama Leone's</h1>
+    <p id="description">We're so excited to reserve you a table! With a few more details, we will provide you a great dining experience!</p>
     <form id="survey-form">
-        <label id="label-name" for="name">Name:</label>
-            <input id="name" type="text" name="name">
-        <label id="label-email" for="email">Email:</label>
-            <input id="email" type="email" name="email" 
-            placeholder="username@email.com" pattern=".+@.+.com"
-            title="Please match the requested format. For example: bob@gmail.com">
-        <label id="label-number" for="number">Number:</label>
-            <input id="number" type="number" name="number">
-            <!-- formulate args to check valid number input for user story #8 -->
-            <!-- use min max attributes to specify number range for user story #9 -->
-        <label for="dropdown">Select an option:</label>
-        <select id="dropdown" name="option">
-            <option value="option 1">option 1</option>
-            <option value="option 2">option 2</option>
-            <option value="option 3">option 3</option>
-        </select>
+    <label id="label-name" for="name">Name:</label>
+    <input id="name" type="text" name="name" placeholder="First &amp; Last" title="Please enter a first and last name so we may better accommodate you!">
 
-        <label for="satisfaction">Rate your satisfaction:</label>
-        
-        <label for="high">High</label>
-            <input type="radio" name="satisfaction" value="high">
-        <label for="med">Medium</label>
-            <input type="radio" name="satisfaction" value="med">
-        <label for="low" name="satisfaction">Low</label>
-            <input type="radio" name="satisfaction" value="low">
+    <label id="label-email" for="email">Email:</label>
+    <input id="email" type="email" name="email" 
+    placeholder="username@email.com" pattern=".+@.+.com"
+    title="Please match the requested format. For example: bob@gmail.com">
 
-        <label for="personality">Describe yourself(check all that apply):</label>
+    <label id="label-number" for="number">Number of Guests</label>
+    <input id="number" type="number" name="number" min="2" max ="50" placeholder="Number of guests">
 
-        <label for="happy" name="personality">Happy</label>
-            <input type="checkbox" name="personality" value="happy">
-        <label for="so-so" name="personality">So-So</label>
-            <input type="checkbox" name="personality" value="so-so">
-        <label for="sad" name="personality">Sad</label>
-            <input type="checkbox" name="personality" value="sad">
-        <label for="overthemoon" name="personality">Over the Moon</label>
-            <input type="checkbox" name="personality" vaule="overthemoon">
-        
-        <label for="feedback">Give us some Feedback:</label>
-            <input type="text" name="feedback" size="100" maxlength="500">
-        
-        <label for="submit" name="send">Send us your info!</label>
-        <input type="submit" id="submit" name="send" value="Send">
+    <label for="dropdown">Request a Server</label>
+    <select id="dropdown" name="option">
+        <option selected value="">-- Request a server --</option>
+        <option value="Brian">Brian</option>
+        <option value="Abby">Abby</option>
+        <option value="Jenna">Jenna</option>
+        <option value="Bradley">Bradley</option>
+        <option value="none">No Server Preference</option>
+    </select>
+
+    <label for="seating">Tell us your seating preference:</label>
+
+    <input type="radio" name="seating" value="inside" checked>
+    <label for="inside" name="seating">Inside</label>
+
+    <input type="radio" name="seating" value="outside">
+    <label for="outside" name="seating">Outside</label>
+
+    <input type="radio" name="seating" value="bar">
+    <label for="bar" name="seating">Bar</label>
+
+    <label for="diet">Let us know about any dietary needs!</label>
+
+    <input type="checkbox" name="diet" value="gluten">
+    <label for="gluten" name="diet">Gluten Free</label>
+
+    <input type="checkbox" name="diet" value="vegan">
+    <label for="vegan" name="diet">Vegan</label>
+
+    <input type="checkbox" name="diet" value="dairy">
+    <label for="dairy" name="diet">Dairy-Free</label>
+
+    <input type="checkbox" name="diet" value="egg">
+    <label for="egg" name="diet">Egg-Free</label>
+
+    <input type="text" name="dietmisc" size="100" maxlength="500">
+    <label for="feedback">Any other dietary needs:</label>
+
+    <input type="submit" id="submit" name="reservation" value="Request Reservation">
     </form>
 </body>
 </html>

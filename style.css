@@ -1,0 +1,19 @@
+* {
+  box-sizing:border-box;
+}
+
+.block {
+  display:block;
+  margin: 2em;
+  padding:0.5em;
+  height: 100%;
+  width: auto;
+}
+
+.form {
+  display:inline-flex;
+}
+
+.border {
+  border: solid black 0.25em;
+}
