@@ -20,7 +20,7 @@
             <input id="number" type="number" name="number">
             <!-- formulate args to check valid number input for user story #8 -->
             <!-- use min max attributes to specify number range for user story #9 -->
-        <label for="dropdown">Choose an option:</label>
+        <label for="dropdown">Select an option:</label>
         <select id="dropdown" name="option">
             <option value="option 1">option 1</option>
             <option value="option 2">option 2</option>
@@ -29,18 +29,29 @@
 
         <label for="satisfaction">Rate your satisfaction:</label>
         
-        <input type="radio" name="satisfaction" value="high">
-            <label for="high">High</label>
-        <input type="radio" name="satisfaction" value="med">
-            <label for="med">Medium</label>
-        <input type="radio" name="satisfaction" value="low">
-            <label for="low" name="satisfaction">Low</label>
+        <label for="high">High</label>
+            <input type="radio" name="satisfaction" value="high">
+        <label for="med">Medium</label>
+            <input type="radio" name="satisfaction" value="med">
+        <label for="low" name="satisfaction">Low</label>
+            <input type="radio" name="satisfaction" value="low">
 
         <label for="personality">Describe yourself(check all that apply):</label>
 
-        <input type="checkbox" name="personality" value="happy">
-            <label for="happy" name="personality">Happy</label>
+        <label for="happy" name="personality">Happy</label>
+            <input type="checkbox" name="personality" value="happy">
+        <label for="so-so" name="personality">So-So</label>
+            <input type="checkbox" name="personality" value="so-so">
+        <label for="sad" name="personality">Sad</label>
+            <input type="checkbox" name="personality" value="sad">
+        <label for="overthemoon" name="personality">Over the Moon</label>
+            <input type="checkbox" name="personality" vaule="overthemoon">
         
+        <label for="feedback">Give us some Feedback:</label>
+            <input type="text" name="feedback" size="100" maxlength="500">
+        
+        <label for="submit" name="send">Send us your info!</label>
+        <button id="submit" name="send" value="send">Send!</button>
     </form>
 </body>
 </html>
