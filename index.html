@@ -11,11 +11,11 @@
     <h1 id="title">Title</h1>
     <p id="description">Description</p>
     <form id="survey-form">
-        <label id="label-name">Name:</label>
+        <label id="label-name" for="name">Name:</label>
             <input id="name" type="text" name="name">
-        <label id="label-email">Email:</label>
+        <label id="label-email" for="email">Email:</label>
             <input id="email" type="email" name="email">
-        <label id="label-number">Number:</label>
+        <label id="label-number" for="number">Number:</label>
             <!-- formulate args to check valid email for user story #6 -->
             <input id="number" type="number" name="number">
             <!-- formulate args to check valid number input for user story #8 -->
@@ -26,6 +26,21 @@
             <option value="option 2">option 2</option>
             <option value="option 3">option 3</option>
         </select>
+
+        <label for="satisfaction">Rate your satisfaction:</label>
+        
+        <input type="radio" name="satisfaction" value="high">
+            <label for="high">High</label>
+        <input type="radio" name="satisfaction" value="med">
+            <label for="med">Medium</label>
+        <input type="radio" name="satisfaction" value="low">
+            <label for="low" name="satisfaction">Low</label>
+
+        <label for="personality">Describe yourself(check all that apply):</label>
+
+        <input type="checkbox" name="personality" value="happy">
+            <label for="happy" name="personality">Happy</label>
+        
     </form>
 </body>
 </html>
