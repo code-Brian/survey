@@ -8,59 +8,102 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1 id="title">Mama Leone's</h1>
-    <p id="description">We're so excited to reserve you a table! With a few more details, we will provide you a great dining experience!</p>
-    <form id="survey-form">
-    <label id="label-name" for="name">Name:</label>
-    <input id="name" type="text" name="name" placeholder="First &amp; Last" title="Please enter a first and last name so we may better accommodate you!">
+    <div class="container">
+        <h1 id="title" class="text-center">Mama Leone's</h1>
+        <p id="description" class="text-center">We're so excited to reserve you a table! With a few more details, we will provide you a great dining experience!</p>
+        <form id="survey-form">
+            <div class="form-group">
+                <label id="date" for="resdate">Date</label>
+                <input class="form-control" id="datestart" type="date" name="resdate" placeholder="mm/dd/yyyy" title="Please select a date!">
+            </div>
 
-    <label id="label-email" for="email">Email:</label>
-    <input id="email" type="email" name="email" 
-    placeholder="username@email.com" pattern=".+@.+.com"
-    title="Please match the requested format. For example: bob@gmail.com">
+            <div class="form-group">
+                <label id="time" for="restime">Time</label>
+                <input class="form-control" id="timestart" type="time" name="restime" placeholder="00:00" title="Please select a time!">
+            </div>
 
-    <label id="label-number" for="number">Number of Guests</label>
-    <input id="number" type="number" name="number" min="2" max ="50" placeholder="Number of guests">
+            <div class="form-group">
+                <label id="label-name" for="name">Name</label>
+                <input class="form-control" id="name" type="text" name="name" placeholder="First &amp; Last" title="Please enter a first and last name so we may better accommodate you!">
+            </div>
 
-    <label for="dropdown">Request a Server</label>
-    <select id="dropdown" name="option">
-        <option selected value="">-- Request a server --</option>
-        <option value="Brian">Brian</option>
-        <option value="Abby">Abby</option>
-        <option value="Jenna">Jenna</option>
-        <option value="Bradley">Bradley</option>
-        <option value="none">No Server Preference</option>
-    </select>
+            <div class="form-group">
+                <label id="label-email" for="email">Email</label>
+                <input class="form-control" id="email" type="email" name="email" 
+                placeholder="username@email.com" pattern=".+@.+.com"
+                title="Please match the requested format. For example: bob@gmail.com">
+            </div>  
 
-    <label for="seating">Tell us your seating preference:</label>
+            <div class="form-group">
+                <label id="label-number" for="number">Number of Guests</label>
+                <input class="form-control"id="number" type="number" name="number" min="2" max ="50" placeholder="Number of guests">
+            </div>  
 
-    <input type="radio" name="seating" value="inside" checked>
-    <label for="inside" name="seating">Inside</label>
+            <div class="form-group">
+                <p>Reuqest Your Server</p>
+                <select class="form-control" id="dropdown" name="option">
+                    <option selected value="">-- Request a server --</option>
+                    <option value="Brian">Brian</option>
+                    <option value="Abby">Abby</option>
+                    <option value="Jenna">Jenna</option>
+                    <option value="Bradley">Bradley</option>
+                    <option value="none">No Server Preference</option>
+                </select>
+            </div>
 
-    <input type="radio" name="seating" value="outside">
-    <label for="outside" name="seating">Outside</label>
+            <div class="form-group">
+                <p>Tell us your seating preference</p>
 
-    <input type="radio" name="seating" value="bar">
-    <label for="bar" name="seating">Bar</label>
+                <label for="inside" name="seating">
+                    <input class="input-radio" type="radio" name="seating" value="inside" checked>
+                    Inside
+                </label>
 
-    <label for="diet">Let us know about any dietary needs!</label>
+                <label for="outside" name="seating">
+                    <input class="input-radio" type="radio" name="seating" value="outside">
+                    Outside
+                </label>
 
-    <input type="checkbox" name="diet" value="gluten">
-    <label for="gluten" name="diet">Gluten Free</label>
+                <label for="bar" name="seating">
+                    <input class="input-radio" type="radio" name="seating" value="bar">
+                    Bar
+                </label>
+            </div>
 
-    <input type="checkbox" name="diet" value="vegan">
-    <label for="vegan" name="diet">Vegan</label>
+            <div class="form-group">
+                <p>Let us know about any dietary needs!</p>
 
-    <input type="checkbox" name="diet" value="dairy">
-    <label for="dairy" name="diet">Dairy-Free</label>
+                <label for="gluten" name="diet">
+                    <input class="input-checkbox" type="checkbox" name="diet" value="gluten">
+                    Gluten Free
+                </label>
 
-    <input type="checkbox" name="diet" value="egg">
-    <label for="egg" name="diet">Egg-Free</label>
+                <label for="vegan" name="diet">
+                    <input class="input-checkbox" type="checkbox" name="diet" value="vegan">
+                    Vegan
+                </label>
 
-    <label for="feedback">Any other dietary needs:</label>
-    <input type="text" name="dietmisc" size="100" maxlength="500">
+                <label for="dairy" name="diet">
+                    <input class="input-checkbox" type="checkbox" name="diet" value="dairy">
+                    Dairy-Free
+                </label>
+                
+                <label for="egg" name="diet">
+                    <input class="input-checkbox" type="checkbox" name="diet" value="egg">
+                    Egg-Free
+                </label>
+            </div>
 
-    <input type="submit" id="submit" name="reservation" value="Request Reservation">
-    </form>
+            <div class="form-group">
+                <p>Any other dietary needs:</p>
+                <textarea id="comments" class="input-textarea"for="comments">
+                </textarea>
+            </div>
+
+            <div class="form-group">
+                <input type="submit" id="submit" class="submit-button" name="reservation" value="Request Reservation">
+            </div>
+        </form>
+    </div>
 </body>
 </html>
