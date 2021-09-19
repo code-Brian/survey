@@ -14,24 +14,44 @@
         <form id="survey-form">
             <div class="form-group">
                 <label id="date" for="resdate">Date</label>
-                <input class="form-control" id="datestart" type="date" name="resdate" placeholder="mm/dd/yyyy" title="Please select a date!">
+                <input 
+                    class="form-control" 
+                    id="datestart" 
+                    type="date" 
+                    name="resdate" 
+                    placeholder="mm/dd/yyyy" 
+                    title="Please select a date!">
             </div>
 
             <div class="form-group">
                 <label id="time" for="restime">Time</label>
-                <input class="form-control" id="timestart" type="time" name="restime" placeholder="08:00 AM" title="Please select a time!">
+                <input 
+                    class="form-control" 
+                    id="timestart" type="time" name="restime" 
+                    placeholder="08:00 AM" 
+                    title="Please select a time!">
             </div>
 
             <div class="form-group">
                 <label id="label-name" for="name">Name</label>
-                <input class="form-control" id="name" type="text" name="name" placeholder="First &amp; Last" title="Please enter a first and last name so we may better accommodate you!">
+                <input 
+                    class="form-control" 
+                    id="name" 
+                    type="text" 
+                    name="name" 
+                    placeholder="First &amp; Last" 
+                    title="Please enter a first and last name so we may better accommodate you!"
+                    required>
             </div>
 
             <div class="form-group">
                 <label id="label-email" for="email">Email</label>
-                <input class="form-control" id="email" type="email" name="email" 
-                placeholder="username@email.com" pattern=".+@.+.com"
-                title="Please match the requested format. For example: bob@gmail.com">
+                <input 
+                    class="form-control" 
+                    id="email" type="email" name="email" 
+                    placeholder="username@email.com" pattern=".+@.+.com"
+                    title="Please match the requested format. For example: bob@gmail.com"
+                    required>
             </div>  
 
             <div class="form-group">
