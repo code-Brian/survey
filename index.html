@@ -11,26 +11,24 @@
     <div class="container">
         <h1 id="title" class="text-center">Mama Leone's</h1>
         <p id="description" class="text-center">We're so excited to reserve you a table!</p>
-        <p id="description" class="text-center">With a few more details, we will provide you a great dining experience!</p>
+        <p class="text-center">With a few more details, we will provide you a great dining experience!</p>
         <form id="survey-form">
             <h2 class="text-center">Reservation Details</h2>
             <div class="form-group">
-                <label id="date" for="resdate">Date</label>
+                <label id="date" for="datestart">Date</label>
                 <input 
                     class="form-control" 
                     id="datestart" 
                     type="date" 
-                    name="resdate" 
-                    placeholder="mm/dd/yyyy" 
+                    name="resdate"
                     title="Please select a date!">
             </div>
 
             <div class="form-group">
-                <label id="time" for="restime">Time</label>
+                <label id="time" for="timestart">Time</label>
                 <input 
                     class="form-control" 
-                    id="timestart" type="time" name="restime" 
-                    placeholder="08:00 AM" 
+                    id="timestart" type="time" name="restime"  
                     title="Please select a time!">
             </div>
 
@@ -82,18 +80,18 @@
             <div class="form-group">
                 <p>Tell us your seating preference</p>
 
-                <label for="inside" name="seating">
-                    <input class="input-radio" type="radio" name="seating" value="inside" checked>
+                <label for="inside">
+                    <input id ="inside" class="input-radio" type="radio" name="seating" value="inside" checked>
                     Inside
                 </label>
 
-                <label for="outside" name="seating">
-                    <input class="input-radio" type="radio" name="seating" value="outside">
+                <label for="outside">
+                    <input id="outside" class="input-radio" type="radio" name="seating" value="outside">
                     Outside
                 </label>
 
-                <label for="bar" name="seating">
-                    <input class="input-radio" type="radio" name="seating" value="bar">
+                <label for="bar">
+                    <input id="bar" class="input-radio" type="radio" name="seating" value="bar">
                     Bar
                 </label>
             </div>
@@ -101,30 +99,30 @@
             <div class="form-group">
                 <p>Let us know about any dietary needs!</p>
 
-                <label for="gluten" name="diet">
-                    <input class="input-checkbox" type="checkbox" name="diet" value="gluten">
+                <label for="gluten">
+                    <input id="gluten" class="input-checkbox" type="checkbox" name="diet" value="gluten">
                     Gluten Free
                 </label>
 
-                <label for="vegan" name="diet">
-                    <input class="input-checkbox" type="checkbox" name="diet" value="vegan">
+                <label for="vegan">
+                    <input id="vegan" class="input-checkbox" type="checkbox" name="diet" value="vegan">
                     Vegan
                 </label>
 
-                <label for="dairy" name="diet">
-                    <input class="input-checkbox" type="checkbox" name="diet" value="dairy">
+                <label for="dairy">
+                    <input id="dairy" class="input-checkbox" type="checkbox" name="diet" value="dairy">
                     Dairy-Free
                 </label>
                 
-                <label for="egg" name="diet">
-                    <input class="input-checkbox" type="checkbox" name="diet" value="egg">
+                <label for="egg">
+                    <input id="egg" class="input-checkbox" type="checkbox" name="diet" value="egg">
                     Egg-Free
                 </label>
             </div>
 
             <div class="form-group">
                 <p>Any other dietary needs:</p>
-                <textarea id="comments" class="input-textarea"for="comments">
+                <textarea id="comments" class="input-textarea">
                 </textarea>
             </div>
 
